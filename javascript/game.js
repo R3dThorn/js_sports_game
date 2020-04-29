@@ -35,7 +35,7 @@ button2.addEventListener("click", function() {
     }
 })
 // Reset and Winner Declaration
-resetbutton.addEventListener("click", function() {
+resetbutton.addEventListener("click", function RunReset() {
     console.log("Game Reset!")
     if (goals1.innerHTML > goals2.innerHTML){
         window.alert("Team 1 Wins!")
