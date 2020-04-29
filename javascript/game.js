@@ -34,9 +34,18 @@ button2.addEventListener("click", function() {
         console.log("Team 2 Failure")
     }
 })
-// Reset function
+// Reset and Winner Declaration
 resetbutton.addEventListener("click", function() {
     console.log("Game Reset!")
+    if (goals1.innerHTML > goals2.innerHTML){
+        window.alert("Team 1 Wins!")
+    } 
+    if (goals1.innerHTML < goals2.innerHTML){
+        window.alert("Team 2 Wins!")
+    }
+    if (goals1.innerHTML === goals2.innerHTML){
+        window.alert("Draw")
+    }
     let resetcounter = Number(gamereset.innerHTML) + 1
     gamereset.innerHTML = resetcounter
     shots1.innerHTML = 0
